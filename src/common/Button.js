@@ -19,4 +19,7 @@ const ButtonComponent = styled.button`
   border-radius: 30px;
   display: block;
   cursor: pointer;
+  :hover {
+    color: ${({ variant }) => Theme.button[variant].hover.color};
+  }
 `;

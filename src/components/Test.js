@@ -12,12 +12,12 @@ export default function Text() {
       <Button variant="primary" size="small">
         Click Me!
       </Button>
-      <Button variant="secondary" size="medium">
+      {/* <Button variant="secondary" size="medium">
         Click Me!
       </Button>
       <Button variant="outlinedbtn" size="larg">
         Click Me!
-      </Button>
+      </Button> */}
     </Container>
   );
 }

@@ -1,21 +1,21 @@
+export const colors = {
+  RoyalBlue: "#3763EB",
+  RoyalBlueLight: "#798fff",
+  RoyalBlueDark: "#0039b7",
+  Dolphin: "#6E657E",
+  DolphinLight: "#9c93ad",
+  DolphinDark: "#433b52",
+  BlackPearl: "#081828",
+  BlackPearlLight: "#303e50",
+  DustyGray: "#999999",
+  DustyGrayLight: "#cacaca",
+  DustyGrayDark: "#6b6b6b",
+  BlackSqueeze: "#f6f9fc",
+  BlackSqueezeDark: "#c3c6c9",
+  Black: "#000000",
+  White: "#ffffff",
+};
 export const Theme = {
-  colors: {
-    RoyalBlue: "#3763EB",
-    RoyalBlueLight: "#798fff",
-    RoyalBlueDark: "#0039b7",
-    Dolphin: "#6E657E",
-    DolphinLight: "#9c93ad",
-    DolphinDark: "#433b52",
-    BlackPearl: "#081828",
-    BlackPearlLight: "#303e50",
-    BlackPearlDark: "#000000",
-    DustyGray: "#999999",
-    DustyGrayLight: "#cacaca",
-    DustyGrayDark: "#6b6b6b",
-    BlackSqueeze: "#f6f9fc",
-    BlackSqueezeLight: "#ffffff",
-    BlackSqueezeDark: "#c3c6c9",
-  },
   typography: {
     component: {
       h1: "h1",
@@ -76,12 +76,16 @@ export const Theme = {
   },
   button: {
     primary: {
-      backgroundColor: "#ffffff",
-      color: "#3763EB",
-      border: "2px solid #3763EB",
+      backgroundColor: colors.White,
+      color: colors.BlackPearl,
+      border: `2px solid ${colors.RoyalBlue}`,
+      hover: {
+        color: colors.RoyalBlueDark,
+        border: colors.RoyalBlueDark,
+      },
     },
     secondary: {
-      backgroundColor: "#3763EB",
+      backgroundColor: colors.RoyalBlue,
       color: "#fff",
       border: "1px solid #3763EB",
     },
