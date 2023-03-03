@@ -74,4 +74,44 @@ export const Theme = {
       black: "900",
     },
   },
+  button: {
+    primary: {
+      backgroundColor: "#ffffff",
+      color: "#3763EB",
+      border: "2px solid #3763EB",
+    },
+    secondary: {
+      backgroundColor: "#3763EB",
+      color: "#fff",
+      border: "1px solid #3763EB",
+    },
+    ternary: {},
+    outlinedbtn: {
+      backgroundColor: "none",
+      color: "#3763EB",
+      border: "1px solid #3763EB",
+    },
+    textbtn: {
+      border: "none",
+      color: "#3763EB",
+    },
+    size: {
+      small: {
+        width: "135px",
+        // height: "55px",
+      },
+      medium: {
+        width: "150px",
+        // height: "55px",
+      },
+      larg: {
+        width: "165px",
+        // height: "55px",
+      },
+      xlarge: {
+        width: "180px",
+        // height: "55px",
+      },
+    },
+  },
 };
