@@ -11,6 +11,8 @@ export default function Button({ variant, size, children }) {
 
 const ButtonComponent = styled.button`
   font-size: ${Theme.typography.fontSize.button};
+  line-height: ${Theme.typography.lineHeight.caption};
+  font-weight: ${Theme.typography.fontWeights.semiBold};
   width: ${({ size }) => Theme.button.size[size].width};
   height: 45px;
   background-color: ${({ variant }) => Theme.button[variant].backgroundColor};
@@ -21,5 +23,19 @@ const ButtonComponent = styled.button`
   cursor: pointer;
   :hover {
     color: ${({ variant }) => Theme.button[variant].hover.color};
+    border: ${({ variant }) => Theme.button[variant].hover.border};
+    background-color: ${({ variant }) =>
+      Theme.button[variant].hover.backgroundColor};
+    transition: ${({ variant }) => Theme.button[variant].hover.transition};
+  }
+  :focus {
+    box-shadow: ${({ variant }) => Theme.button[variant].focus.boxShadow};
+    outline: ${({ variant }) => Theme.button[variant].focus.outline};
+  }
+  :active {
+    color: ${({ variant }) => Theme.button[variant].active.color};
+    border: ${({ variant }) => Theme.button[variant].active.border};
+    background-color: ${({ variant }) =>
+      Theme.button[variant].active.backgroundColor};
   }
 `;
