@@ -109,7 +109,7 @@ export const Theme = {
       hover: {
         color: colors.Blue500,
         border: `3px solid ${colors.Blue500}`,
-        backgroundColor: colors.Blue50,
+        backgroundColor: colors.Purple200,
         transition: "0.7s",
       },
       focus: {
@@ -119,7 +119,7 @@ export const Theme = {
       active: {
         color: colors.Blue600,
         border: `3px solid ${colors.Blue600}`,
-        backgroundColor: colors.Blue100,
+        backgroundColor: colors.Purple300,
       },
     },
     secondary: {
@@ -132,10 +132,19 @@ export const Theme = {
         border: `3px solid ${colors.Blue500}`,
         transition: "0.7s",
       },
+      focus: {
+        boxShadow: `0 0 0 5px ${colors.Blue50}`,
+        outline: "none",
+      },
+      active: {
+        color: colors.Purple50,
+        border: `3px solid ${colors.Blue600}`,
+        backgroundColor: colors.Blue600,
+      },
     },
     ternary: {},
     outlinedbtn: {
-      backgroundColor: "none",
+      backgroundColor: "Transparent",
       color: colors.Blue400,
       border: `3px solid ${colors.Blue400}`,
       hover: {
@@ -143,13 +152,29 @@ export const Theme = {
         color: colors.Blue500,
         transition: "0.7s",
       },
+      focus: {
+        boxShadow: `0 0 0 5px ${colors.Blue50}`,
+        outline: "none",
+      },
+      active: {
+        color: colors.Blue700,
+        border: `3px solid ${colors.Blue700}`,
+      },
     },
     textbtn: {
       border: "none",
+      backgroundColor: "Transparent",
       color: colors.Blue400,
       hover: {
         color: colors.Blue500,
-        transition: "0.7s",
+      },
+      focus: {
+        textShadow: `2px 2px 2px  ${colors.Blue200}`,
+        outline: "none",
+      },
+      active: {
+        color: colors.Blue700,
+        textShadow: `2px 2px 2px  ${colors.Blue200}`,
       },
     },
     size: {
@@ -159,7 +184,7 @@ export const Theme = {
       medium: {
         width: "150px",
       },
-      larg: {
+      large: {
         width: "165px",
       },
       xlarge: {

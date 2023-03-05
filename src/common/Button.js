@@ -20,6 +20,7 @@ const ButtonComponent = styled.button`
   border: ${({ variant }) => Theme.button[variant].border};
   border-radius: 30px;
   display: block;
+  opacity: ${({ variant }) => Theme.button[variant].opacity};
   cursor: pointer;
   :hover {
     color: ${({ variant }) => Theme.button[variant].hover.color};
@@ -31,11 +32,13 @@ const ButtonComponent = styled.button`
   :focus {
     box-shadow: ${({ variant }) => Theme.button[variant].focus.boxShadow};
     outline: ${({ variant }) => Theme.button[variant].focus.outline};
+    text-shadow: ${({ variant }) => Theme.button[variant].focus.textShadow};
   }
   :active {
     color: ${({ variant }) => Theme.button[variant].active.color};
     border: ${({ variant }) => Theme.button[variant].active.border};
     background-color: ${({ variant }) =>
       Theme.button[variant].active.backgroundColor};
+    text-shadow: ${({ variant }) => Theme.button[variant].active.textShadow};
   }
 `;
